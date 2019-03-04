@@ -1,0 +1,26 @@
+# /etc/conf.d/xistard: config file for /etc/init.d/xistard
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/xistar/xistar.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/xistard"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/xistard.pid"
+
+# Where to write xistard data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/xistard"
+
+# User and group to own xistard process
+#BITCOIND_USER="xistar"
+#BITCOIND_GROUP="xistar"
+
+# Path to xistard executable
+#BITCOIND_BIN="/usr/bin/xistard"
+
+# Nice value to run xistard under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

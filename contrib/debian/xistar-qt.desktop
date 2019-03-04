@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Xistar
+Comment=Xistar P2P Cryptocurrency
+Comment[fr]=Xistar, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Xistar, eşten eşe kriptografik sanal para birimi
+Exec=xistar-qt %u
+Terminal=false
+Type=Application
+Icon=xistar128
+MimeType=x-scheme-handler/xistar;
+Categories=Office;Finance;
