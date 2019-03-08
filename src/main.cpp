@@ -1816,7 +1816,7 @@ int64_t GetBlockValue(int nHeight)
      nSubsidy = 5 * COIN;
     }
     else if (nHeight > Params().LAST_POW_BLOCK()) {
-     nSubsidy = 3 * COIN;
+     nSubsidy = 7 * COIN;
     }
     
     return nSubsidy;
@@ -1855,13 +1855,14 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
             return 0;
     }
 
-    if (nHeight <= Params().LAST_POW_BLOCK()) {
+    if (nHeight <= 2000) {
      return 0;
-    }else{
-     ret = blockValue * 0.1;
-    }
-    
-    return ret;
+   } else if (nHeight >= 2001 && nHeight <= Params().LAST_POW_BLOCK()) {
+        ret = blockValue * .90;
+    } else if (nHeight > Params().LAST_POW_BLOCK()) {
+        ret = blockValue * .90;
+} 
+return ret;
 }
 
 bool IsInitialBlockDownload()
