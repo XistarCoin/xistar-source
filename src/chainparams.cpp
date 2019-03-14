@@ -170,8 +170,9 @@ public:
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000a8d0c317311a8d4eedb7e9a9f4795a9dfd1d41c70297343baea0f0c51d9"));
         assert(genesis.hashMerkleRoot == uint256("0x0b968b1844e870aef80b69ced9596f3aa4f6f87c47390eb6e46c2b78348a712d"));
-
-        vSeeds.push_back(CDNSSeedData("walletbuilders.com", "node1.walletbuilders.com"));
+        
+        vSeeds.push_back(CDNSSeedData("Node1", "172.81.177.62"));
+        vSeeds.push_back(CDNSSeedData("Node2", "137.74.61.113"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 75);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 76);
